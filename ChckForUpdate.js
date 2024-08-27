@@ -1,7 +1,7 @@
 const versionKey = 'GameVersion';
 const dbName = 'UnityCache';
 const storeName = 'cacheStore';
-const newVersion = '1.7'; 
+const newVersion = '1.8'; 
 
 async function getDB() {
     return new Promise((resolve, reject) => {
