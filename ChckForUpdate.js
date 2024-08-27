@@ -1,5 +1,5 @@
 const versionKey = 'GameVersion';
-const dbName = 'UnityCache';
+const dbName = 'AraiCache';
 const storeName = 'cacheStore';
 const newVersion = '1.8'; 
 
