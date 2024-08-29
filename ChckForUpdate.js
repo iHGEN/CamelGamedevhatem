@@ -45,14 +45,15 @@ async function clearCache() {
         for (const name of cacheNames) {
             await caches.delete(name).then(function(success){
                 if (success) {
-                    console.log(cacheName + " cache cleared successfully.");
+                    console.log(name + " cache cleared successfully.");
                 } else {
-                    console.error("Failed to clear " + cacheName + " cache.");
+                    console.error("Failed to clear " + name + " cache.");
                 }
             });
         }
     }
 }
+
 
 async function checkAndUpdateCache(version) {
     try {
