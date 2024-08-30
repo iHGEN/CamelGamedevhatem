@@ -1,7 +1,7 @@
 const versionKey = 'GameVersion';
 const dbName = 'AraiCache';
 const storeName = 'cacheStore';
-const newVersion = '1.7'; 
+const newVersion = '1.8'; 
 
 async function getDB() {
     return new Promise((resolve, reject) => {
@@ -62,6 +62,7 @@ async function checkAndUpdateCache(version) {
             await clearCache();
             await storeVersion(version);
             console.log('Cache cleared and new version stored:', version);
+            Window.location.reload();
         } else {
             console.log('Version is up-to-date:', version);
         }
