@@ -62,7 +62,7 @@ async function checkAndUpdateCache(version) {
             await clearCache();
             await storeVersion(version);
             console.log('Cache cleared and new version stored:', version);
-            Window.location.reload();
+            document.location.reload();
         } else {
             console.log('Version is up-to-date:', version);
         }
