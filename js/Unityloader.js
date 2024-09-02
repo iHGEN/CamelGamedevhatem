@@ -28,7 +28,7 @@ async function loadUnityGame() {
 
   // Configuration for Unity instance
   var config = {
-    dataFile: buildUrl + "/CamelDevHatem.data.br", 
+    dataUrl: buildUrl + "/CamelDevHatem.data.br", 
     frameworkUrl: buildUrl + "/CamelDevHatem.framework.js.br",
     codeUrl: buildUrl + "/CamelDevHatem.wasm.br",
     streamingAssetsUrl: "StreamingAssets",
