@@ -60,7 +60,7 @@ async function loadUnityGame() {
     updateBannerVisibility();
   }
   var buildUrl = "Build";
-  var dataUrl = buildUrl + "/CamelDevHatem.data";
+  var dataUrl = buildUrl + "/CamelDevHatem.data.br";
 
   
   const fileSize = await getFileSize(dataUrl);
@@ -90,8 +90,8 @@ async function loadUnityGame() {
 
   var config = {
       dataUrl: dataBlobUrl,
-      frameworkUrl: buildUrl + "/CamelDevHatem.framework.js",
-      codeUrl: buildUrl + "/CamelDevHatem.wasm",
+      frameworkUrl: buildUrl + "/CamelDevHatem.framework.js.br",
+      codeUrl: buildUrl + "/CamelDevHatem.wasm.br",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "i20-Project",
