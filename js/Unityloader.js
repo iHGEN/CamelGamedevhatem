@@ -44,7 +44,7 @@ async function loadUnityGame() {
   var unityInstance = null;
 
   var buildUrl = "Build";
-  var dataUrl = buildUrl + "/CamelDevHatem.data.br";
+  var dataUrl = buildUrl + "/CamelDevHatem.data";
 
   
   const fileSize = await getFileSize(dataUrl);
@@ -74,8 +74,8 @@ async function loadUnityGame() {
 
   var config = {
       dataUrl: dataBlobUrl,
-      frameworkUrl: buildUrl + "/CamelDevHatem.framework.js.br",
-      codeUrl: buildUrl + "/CamelDevHatem.wasm.br",
+      frameworkUrl: buildUrl + "/CamelDevHatem.framework.js",
+      codeUrl: buildUrl + "/CamelDevHatem.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "i20-Project",
