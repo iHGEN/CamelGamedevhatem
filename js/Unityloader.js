@@ -3,7 +3,7 @@ async function loadUnityGame() {
   var canvas = document.querySelector("#unity-canvas");
   var loadingBar = document.querySelector("#unity-loading-bar");
   var progressBarFull = document.querySelector("#unity-progress-bar-full");
-
+   var warningBanner = document.querySelector("#unity-warning");
   var unityInstance = null;
 
   function unityShowBanner(msg, type) {
@@ -37,6 +37,16 @@ async function loadUnityGame() {
     productVersion: "0.1.0",
     showBanner: unityShowBanner,
   };
+  
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        // Mobile device style: fill the whole browser client area with the game canvas:
+        var meta = document.createElement('meta');
+        meta.name = 'viewport';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+
+      loadingBar.style.display = "block";
 
   // Load the Unity loader script
   var script = document.createElement("script");
