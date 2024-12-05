@@ -1,7 +1,7 @@
 const versionKey = 'GameVersion';
 const dbName = 'AraiCache';
 const storeName = 'cacheStore';
-const newVersion = '2.3'; 
+const newVersion = '2.2'; 
 
 async function getDB() {
     return new Promise((resolve, reject) => {
