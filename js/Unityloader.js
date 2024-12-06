@@ -28,9 +28,9 @@ async function loadUnityGame() {
 
   // Configuration for Unity instance
   var config = {
-    dataUrl: buildUrl + "/CamelGameDevاatem.data.br", 
-    frameworkUrl: buildUrl + "/CamelGameDevاatem.framework.js.br",
-    codeUrl: buildUrl + "/CamelGameDevاatem.wasm.br",
+    dataUrl: buildUrl + "/CamelGameDevhatem.data.br", 
+    frameworkUrl: buildUrl + "/CamelGameDevhatem.framework.js.br",
+    codeUrl: buildUrl + "/CamelGameDevhatem.wasm.br",
     streamingAssetsUrl: "StreamingAssets",
     companyName: "DefaultCompany",
     productName: "i20-Project",
@@ -50,7 +50,7 @@ async function loadUnityGame() {
 
   // Load the Unity loader script
   var script = document.createElement("script");
-  script.src = buildUrl + "/CamelGameDevاatem.loader.js";
+  script.src = buildUrl + "/CamelGameDevhatem.loader.js";
   script.onload = () => {
     createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
